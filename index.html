@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제 통합 웹 페이지</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 상단바 스타일 */
+        #header {
+            background-color: purple;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding-left: 0;
+        }
+
+        #header nav ul li {
+            font-size: 18px;
+        }
+
+        /* 프로젝트 섹션 */
+        #projects {
+            margin: 50px 20px;
+        }
+
+        #projects h2 {
+            color: purple;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-item h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .project-item p {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+
+        .divider {
+            border-bottom: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        /* 권장 사항 섹션 */
+        #recommendations {
+            margin: 50px 20px;
+        }
+
+        #recommendations h2 {
+            color: purple;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .recommendation {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .recommendation p {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .recommendation::before {
+            content: "“";
+            font-size: 30px;
+            vertical-align: top;
+            color: purple;
+        }
+
+        .recommendation::after {
+            content: "”";
+            font-size: 30px;
+            vertical-align: bottom;
+            color: purple;
+        }
+
+        /* 홈 아이콘 스타일 */
+        #home-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #home-icon img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단바 -->
+    <div id="header">
+        <div>
+            <h1>과제 통합 웹 페이지</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Projects</li>
+                <li>Recommendations</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 프로젝트 섹션 -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+            <h3>Chatbot</h3>
+            <p>• Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</p>
+        </div>
+        <div class="divider"></div>
+
+        <div class="project-item">
+            <h3>Sentiment Analyzer</h3>
+            <p>• Developed and deployed a sentiment analyzer for the product review section of an eCommerce platform using IBM NLU.</p>
+        </div>
+        <div class="divider"></div>
+
+        <div class="project-item">
+            <h3>Fashion Website</h3>
+            <p>• Created a styled multipage website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway.</p>
+        </div>
+    </section>
+
+    <!-- 권장 사항 섹션 -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+
+        <div class="recommendation-list">
+            <div class="recommendation">
+                <p>Lilli is an exceptional problem solver. She always approaches challenges with a creative mindset and consistently delivers outstanding results.</p>
+            </div>
+
+            <div class="recommendation">
+                <p>It was a pleasure working with Lilli. Her attention to detail and commitment to high-quality work made her a key asset to our project.</p>
+            </div>
+
+            <div class="recommendation">
+                <p>Lilli has a natural ability to collaborate effectively with team members. She brings innovative ideas and ensures that projects meet deadlines without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 홈 아이콘 섹션 -->
+    <div id="home-icon">
+        <a href="#header">
+            <img src="home_icon.png" alt="Home Icon">
+        </a>
+    </div>
+
+</body>
+</html>
